@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color_btn:#F5AC36;
+    --color_green:rgba(63, 230, 174, 0.616);
+    --color_blue:#0DAFF0;
+    
+}
+.body_parent{
+    min-height: 100vh;
+    background-color:  rgba(250, 248, 248, 0.933);
+}
+.brand_site{
+    width: 100px;
+}
+.container_header{
+    min-height: 500px;
+    max-width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container_input{
+    display: flex;
+    background-color: white;
+}
+
+.container_input input{
+    border: none;
+    padding: 10px 0px 10px 0;
+    outline: none;
+    width: 100px;
+}
+
+.card_hotel{
+    
+    background-size: cover;
+    background-position: center;
+    height: 290px;
+    border-radius: 9px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.card_hotel1_row1{
+    background-image: url('../image/living-room-2732939.jpg');
+}
+.card_hotel2_row1{
+    background-image:url('../image/hotel-1979406.jpg');
+}
+.container_btn_select{
+    margin-top: 14px;
+}
+.card_hotel3_row1{
+    background-image: url('../image/pool-4885450.jpg');
+}
+.card_hotel1_row2{
+    background-image:url('../image/landscape-2016308.jpg');
+}
+.card_hotel2_row2{
+    background-image: url('../image/lobby-346426.jpg');
+}
+.card_hotel3_row2{
+    background-image:url('../image/manor-house-2359884.jpg');
+}
+.card_select1{
+    margin-bottom: 19px;
+}
+.culture_case{
+    flex-basis: 50%;
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.text_card_hotel{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    color: white;
+    background-color: #0026199d;
+    padding: 7px 0px;
+    text-transform: capitalize;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+
+}
+.btn_search{
+    background-color:var(--color_blue);
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0px 10px;
+    /* border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px; */
+}
+.btn_search:hover{
+    background-color:var(--color_btn);
+}
+.btn_submit_select{
+    width: 100%;
+    padding: 2px 0;
+    background-color: #F5AC36;
+    color: white;
+    text-transform: capitalize;
+    font-size:18px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+}
+
+.footer{
+    margin-top: 40px!important;
+}
+.icon_search_nav{
+    color: white;
+    cursor: pointer;
+}
+.icon_input{
+    display: flex;
+    align-items: center;
+    margin-left: 7px;
+}
+.icon_fa_header_input{
+    margin-right: 5px;
+}
+.image_select_card{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.icon_card_select{
+    color: #e3e301;
+    font-size: 23px;
+    margin-top: 15px;
+}
+.formulaire_header{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 83px;
+    transform: translate(-50%);
+  
+}
+.header{
+    background:linear-gradient( rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url('../image/bahrain-1369259.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+.icon_logo{
+    height: 120px;
+   background-color: rgba(0, 0, 0, 0.096);
+}
+.link_nav{
+    display: flex;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: relative;
+}
+.link_nav li{
+    margin-right: 15px;
+    list-style-type: none;
+}
+.link_nav li :hover{
+    color: rgb(218, 217, 216);
+}
+.link_nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+.left_culture_case_content{
+    padding: 40px 20px  20px 20px;
+}
+.navbar_site{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar_site {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.text_card_slect p:nth-child(1){
+    text-transform: uppercase;
+    margin-bottom: -9px;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 7px;
+    margin-bottom:-3px!important
+}
+
+.title1_site {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: cursive;
+    color: var( --color_btn);
+    position: absolute;
+    font-weight: bold;
+}
+.title2{
+    margin: 65px 0;
+    text-align: center;
+    font-size: 25px;
+}
+.text_pays_title_card{
+   
+   background-color: var(--color_btn);
+   
+}
+.text_pays_title_card_generale{
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    border-radius: 4px;
+}
+.text_pays_title_card_green{
+    background-color:var(--color_green);
+}
+#title_culture{
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+#title_culture::after{
+    content: "";
+    display: block;
+    margin-top: 20px;
+    height: 3px;
+    width: 100px;
+    background-color: var(--color_btn);
+}
+.row_card_hotel{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.row_culture{
+    display: flex;
+    background-color: white;
+}
+.row_culture3{
+    margin-bottom: 45px;
+}
+.right_culture_case1{
+    background-image: linear-gradient( rgba(0,0,0,0.3),rgba(0,0,0,0.2)) ,url('../image/diver-668777.jpg');
+}
+.right_culture_case2{
+    background-image: linear-gradient( rgba(0,0,0,0.3),rgba(0,0,0,0.2)) ,url('../image/girl-1822525.jpg');
+}
+.right_culture_case3{
+    background-image: linear-gradient( rgba(0,0,0,0.3),rgba(0,0,0,0.2)) ,url('../image/ramayana-festival-1807516.jpg');
+}
+.row_culture1{
+    margin: 70px 0 0 0;
+}
+.row_culture2{
+    flex-direction:row-reverse
+}
+
+.title_input_footer{
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 26px;
+    margin-bottom: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.footer_case2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container_input_footer_case2 input{
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-radius: 7px;
+    width: 100%;
+  
+}
+.container_input_footer_case2{
+    margin-bottom: 30px;
+}
+
+.container_input_footer_case2 :focus-within{
+    box-shadow: 0 0 3px var(--color_blue);
+}
+.container_input_footer_case2 button{
+    background-color: var(--color_btn);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 10px;
+    outline: none;
+
+}
+.social_icon_footer_case2{
+    display: flex;
+}
+.circle_social_icon{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+   
+}
+.social_icon_footer_case2{
+    padding-bottom: 40px;
+}
+.icon_social_footer_case2{
+   
+   color:white;
+}
+.paragraph_case_footer3 a{
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.link_information_footer{
+    font-size: 24px;
+}
+.p_footer_case4 a{
+    text-decoration: none;
+    color: black;
+}
+.icon_footer_case4{
+    margin-right: 4px;
+}
+.container_icon_toggle{
+    position: absolute;
+    right: 7px;
+    top: 20px;
+    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+}
+.container_icon_close{
+    display: none;
+}
+.icon_toggle{
+    font-size: 40px!important;
+    color: white;
+}
+.active{
+    display: block;
+}
+
+.icon_close_nav_link{
+    color: white;
+    position: absolute;
+    right: 13px;
+    top: 10px;
+}
+#contact_select{
+    color: var(--color_btn);
+}
+
+
+@media screen and (min-width:625px){
+    .container_icon_toggle{
+        position: absolute;
+        right: 7px;
+        top: 20px;
+        display: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        cursor: pointer;
+        display: none;
+    }
+}
+@media screen and (max-width:625px){
+    .link_nav {
+         display: none;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    .container_icon_toggle{
+        display: block;
+    }
+}
+@media screen and (max-width:555px){
+    .row_culture {
+        display: block;
+        background-color: white;
+    }
+}
+
+
+
