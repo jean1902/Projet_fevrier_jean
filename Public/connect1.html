@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<meta charset="utf-8"> 
+<link href="css/insciption.css">
+<html>
+	<header>
+		<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Pulic/css/inscription.css" />
+    
+		<h1 id="title">connexion</h1>
+	</header>
+	<body>
+	<div id="form-outer">
+		<p id="description">Entrez Vos Identifiant Pour Vous Connecter</p>
+		<form id="survey-form">
+			<div class="rowTab"> 
+				<div class="labels"><!-- demande de nom -->
+					<label id="name-label" for="name">* Votre nom :</label>
+				</div>
+				<div class="rightTab">
+					<input autofocus type="text" name="name" id="name" class="input-field" placeholder="Nom et prénom" required>
+				</div>
+              
+			</div>
+			<div class="rowTab">
+				<div class="labels"><!-- demande de Mail-->
+					<label id="email-label" for="password">* Votre mot de Pass :</label>
+				</div>
+				<div class="rightTab">
+					<input type="password" name="password" id="password" class="input-field" required placeholder="password">
+				</div>
+              
+			</div>
+          
+	
+			<button id="submit" type="submit" value="">connection!</button>
+            <a href="inscription.php">inscrivez vous</a>
+            <p class="text_form_login"></p>
+            
+		</form>
+	</div>
+    <script src="script_verif.js"></script>
+	</body>
+</html>

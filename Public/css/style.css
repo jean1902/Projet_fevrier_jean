@@ -26,17 +26,20 @@
 .container_input{
     display: flex;
     background-color: white;
+    flex:1;
 }
 
-.container_input input{
+.container_input input {
     border: none;
-    padding: 10px 0px 10px 0;
+    padding: 10px 7px 10px 0;
     outline: none;
     width: 100px;
 }
+.text_form_login{
+    color:red;
+}
 
 .card_hotel{
-    
     background-size: cover;
     background-position: center;
     height: 290px;
@@ -46,6 +49,7 @@
 }
 .card_hotel1_row1{
     background-image: url('../image/living-room-2732939.jpg');
+    color: black;
 }
 .card_hotel2_row1{
     background-image:url('../image/hotel-1979406.jpg');
@@ -89,13 +93,12 @@
     border-bottom-left-radius: 7px;
 
 }
-.btn_search{
-    background-color:var(--color_blue);
+.btn_search {
+    background-color: var(--color_blue);
     font-size: 17px;
     font-weight: bold;
-    padding: 0px 10px;
-    /* border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px; */
+    border: none;
+    padding: 13px 10px;
 }
 .btn_search:hover{
     background-color:var(--color_btn);
@@ -138,13 +141,15 @@
     font-size: 23px;
     margin-top: 15px;
 }
-.formulaire_header{
+.formulaire_header {
     display: flex;
+    width: 100%;
+    max-width: 800px;
+    flex-wrap: wrap;
     position: absolute;
     left: 50%;
-    bottom: 83px;
-    transform: translate(-50%);
-  
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 .header{
     background:linear-gradient( rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url('../image/bahrain-1369259.jpg');
@@ -243,11 +248,12 @@
     background-color: var(--color_btn);
 }
 .row_card_hotel{
-    display: flex;
-    justify-content: space-between;
+     display: flex;
+     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 35px;
 }
+
 
 .row_culture{
     display: flex;
@@ -365,9 +371,7 @@
     font-size: 40px!important;
     color: white;
 }
-.active{
-    display: block;
-}
+
 
 .icon_close_nav_link{
     color: white;
@@ -375,11 +379,113 @@
     right: 13px;
     top: 10px;
 }
+
 #contact_select{
     color: var(--color_btn);
 }
+.bloc_1_reservation{
+   background-color: blue;
+    height: 300px;
+}
+.formulaire_reservation{
+    max-width: 350px;
+}
+.formulaire_reservation input{
+    padding-left: 7px;
+    float: right;
+    outline: none;
+}
+.btn_reservation{
+    padding: 5px 15px;
+    border-radius: 7px;
+    background-color: var(--color_btn);
+    border: none;
+}
+@media screen and (min-width:992px){
+    .col-md-4 {
+        width: 29.333333%!important;
+    }
+}
 
+@media screen and (max-width:833px){
+    .formulaire_header {
+        display: block;
+        width: 80%;
+        max-width: 800px;
+        flex-wrap: wrap;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        margin-top:55px;
+    }
+    .container_input {
+        display: flex;
+        background-color: white;
+        padding: 4px;
+    }
+   .container_input input {
+    border: none;
+    padding: 10px 5px 10px 0;
+    outline: none;
+    width: 100%;
+}
+    .icon_input {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+    }
+    .btn_search {
+        background-color: var(--color_blue);
+        font-size: 17px;
+        font-weight: bold;
+        border: none;
+        padding: 13px 10px;
+        width: 100%;
+    }
+}
+@media screen and (max-width:768px){
+    .card_hotel {
+        background-size: cover;
+        background-position: center;
+        height: 290px;
+        border-radius: 9px;
+        position: relative;
+        margin-bottom: 30px;
+        width: 31.33%;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:400px){
+    .card_hotel {
+        background-size: cover;
+        background-position: center;
+        height: 290px;
+        border-radius: 9px;
+        position: relative;
+        margin-bottom: 30px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
 
+@media screen and (max-width:627px){
+    .row_culture {
+        display: block;
+        background-color: white;
+    }
+    .icon_toggle{
+        display: block;
+    }
+
+    .link_nav {
+        display: none;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        position: relative;
+    }
+}
 @media screen and (min-width:625px){
     .container_icon_toggle{
         position: absolute;
@@ -393,24 +499,10 @@
         cursor: pointer;
         display: none;
     }
+  
+  
 }
-@media screen and (max-width:625px){
-    .link_nav {
-         display: none;
-        align-items: center;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
-    }
-    .container_icon_toggle{
-        display: block;
-    }
-}
-@media screen and (max-width:555px){
-    .row_culture {
-        display: block;
-        background-color: white;
-    }
-}
+
 
 
 
